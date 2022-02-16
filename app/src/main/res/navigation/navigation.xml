@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/productGrid">
+
+    <fragment
+        android:id="@+id/productGrid"
+        android:name="com.example.apptask2.fragments.ProductGrid"
+        android:label="fragment_product_grid"
+        tools:layout="@layout/fragment_product_grid" >
+        <action
+            android:id="@+id/action_productGrid_to_addNewProduct"
+            app:destination="@id/addNewProduct" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewProduct"
+        android:name="com.example.apptask2.fragments.AddNewProduct"
+        android:label="fragment_add_new_product"
+        tools:layout="@layout/fragment_add_new_product" />
+</navigation>
